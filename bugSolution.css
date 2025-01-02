@@ -1,0 +1,18 @@
+To mitigate this issue, consider using `justify-content: space-between` or `justify-content: space-evenly` instead of `space-around`, depending on the desired spacing behavior. For precise control over item spacing, you can utilize the `gap` property, or adjust the margin/padding of individual items.  
+
+Here's an example using the `gap` property:
+
+```css
+.container {
+  display: flex;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+```
+
+This ensures consistent spacing regardless of the container's width.  For more complex layouts, more finely tuned margin/padding adjustments might be required.
