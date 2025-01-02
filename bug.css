@@ -1,0 +1,16 @@
+The following CSS code snippet exhibits unexpected behavior in some browsers:
+
+```css
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+```
+
+This code is intended to distribute three `.item` elements evenly within a `.container` using `flexbox`. However, in some cases, the last element might experience unexpected spacing or alignment issues, particularly if the container width is not a multiple of the items' total width. This can lead to visual inconsistencies across different browsers or screen sizes.
